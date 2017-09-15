@@ -1,0 +1,36 @@
+<div class="row app-row-class">
+    <div class="col-xs-12">
+
+        <!-- <div class="col-md-6 col-sm-12 app-column-class" ng-repeat="obj in constantArray">
+            <div class="app-chart-title">{{obj.title}}</div>
+            <div id={{obj.key}} class="app-shadow-box" pie-chart="{{obj.dirObj}}">
+            </div>
+            <div style="padding-left:7em;"><button class="btn btn-success text-center" ng-click="fnViewBigChart('{{obj.key}}')">View {{obj.text}}</button></div>
+        </div>
+ -->
+
+        <div class="col-md-6 col-sm-12 app-column-class">
+            <div class="app-chart-title text-center">Pie Chart: Sales Total per Sales Man</div>
+            <div id="pieChart" pie-chart="pieObject" class="app-shadow-box">
+            </div>
+            <div><button class="btn btn-success text-center" ng-click="fnViewBigChart('pieChart')">View Pie Chart</button></div>
+        </div>
+        <div class="col-md-6 col-sm-12 app-column-class">
+        	<div class="app-chart-title text-center">Bar Chart: Sales Total per month</div>
+            <div id="barChart" bar-chart="barObject" class="app-shadow-box">
+            </div>
+            <div><button class="btn btn-success text-center" ng-click="fnViewBigChart('barChart')">View Bar Chart</button></div>
+        </div> 
+        <div class="col-md-6 col-sm-12 app-column-class">
+            <div class="app-chart-title text-center">Top 5 Sales Orders</div>
+            <div id="tableChart" table="salesOrderURL" class="app-shadow-box"></div>
+            <div><button class="btn btn-success text-center" ng-click="fnViewBigChart('salesOrders')">View Sales Orders</button></div>
+        </div>
+        <div class="col-md-6 col-sm-12 app-column-class">
+            <div class="app-chart-title text-center">Top 5 Sales Men</div>
+            <div id="menBarChart" bar-chart="salesMenBarObject" class="app-shadow-box">
+            </div>
+            <div><button class="btn btn-success text-center" ng-click="fnViewBigChart('salesMen')">View Sales Men</button></div>
+        </div>
+    </div>
+</div>

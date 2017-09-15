@@ -1,0 +1,58 @@
+.app-container .app-shadow-box {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.app-container .app-navbar-right .app-header-list li {
+  display: inline;
+  color: #FFFFFF;
+  font-size: 1.2em;
+}
+.app-container .app-row-class {
+  margin-top: 6em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.app-container .app-row-class .app-chart-dashboard {
+  padding-right: 2em;
+  padding-left: 1em;
+}
+.app-container .app-row-class .app-table-div {
+  padding-top: 5em;
+  width: 60%;
+  margin-left: 17%;
+}
+.app-container .app-row-class .app-column-class {
+  margin-bottom: 10em;
+}
+.app-container .app-row-class .app-table-header {
+  background: #dddd8e !important;
+}
+.app-container .app-row-class tr:nth-child(odd) {
+  background: #f7d7ed;
+}
+.app-container .app-row-class tr:nth-child(even) {
+  background: #ffd4b0;
+}
+.app-container .app-row-class .app-chart-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-variant: small-caps;
+  margin-bottom: 2em;
+  text-decoration: underline;
+}
+.app-container .app-chart-big-title {
+  padding-left: 17em;
+}
+.app-container .legend rect {
+  fill: #FFFFFF;
+}
+.app-container .axis {
+  font-size: 12px;
+}
+.app-container .axis path,
+.app-container .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

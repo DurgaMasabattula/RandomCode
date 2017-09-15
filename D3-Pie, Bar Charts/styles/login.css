@@ -1,0 +1,33 @@
+.app-container .app-login-panel {
+  width: 21em;
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 7em;
+  background: #EEEEEE;
+  border: 1px solid #004994;
+}
+.app-container .app-login-panel .app-panel-heading {
+  background: #004994;
+  color: #FFFFFF;
+  height: 3em;
+}
+.app-container .app-login-panel .app-login-fields {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+}
+.app-container .app-login-panel .app-login-forgot-password {
+  font-size: 12px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.app-container .app-login-panel .app-not-registered {
+  font-size: 12px;
+  margin-top: 2em;
+  text-align: center;
+  border-top: 1px solid #CCC;
+  padding-top: 2em;
+}

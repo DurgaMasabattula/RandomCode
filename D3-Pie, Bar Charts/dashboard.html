@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <script src="external_files/jquery.min.js"></script>
+    <script src="external_files/bootstrap.min.js"></script>
+    <script src="external_files/angular.min.js"></script>
+    <script src="external_files/angular-route.min.js"></script>
+    <script src="external_files/d3.min.js"></script>
+    <script src="external_files/d3.legend.js"></script>
+    <script src="external_files/aes.js"></script>
+
+    <link rel="stylesheet" href="external_files/bootstrap.min.css" />
+    <link rel="stylesheet" href="external_files/font-awesome/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/postStyle.css" />
+    
+    <script src="controllers/app.js"></script>
+    <script src="controllers/headerController.js"></script>
+    <script src="controllers/footerController.js"></script>
+    <script src="services/getService.js"></script>
+    <script src="directives/pieChartDirective.js"></script>
+    <script src="directives/barChartDirective.js"></script>
+    <script src="directives/tableDirective.js"></script>
+</head>
+
+<body ng-app="sampleApp" ng-controller="headerController">
+    <div class="container app-container app-no-padding">
+        <nav class="navbar navbar-default app-login-navbar">
+            <div class="app-navbar-left">
+                <div class="app-name">Sales Management</div>
+                <div class="app-company-name"> - By Sai</div>
+            </div>
+            <div class="app-navbar-right">
+                <ul class="list-unstyled app-header-list">
+                    <li>Hi <span ng-bind="userName"></span>&nbsp;<span class="fa fa-user" style="font-size:1.5em;"></span></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><button class="btn btn-success" ng-click="fnLogout()">Logout</button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="alert alert-{{alertType}}" role="alert" data-ng-show="showAlert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong><span ng-bind="alertType"></span>!</strong> <span ng-bind="alertMessage"></span>
+        </div>
+        <div ng-view=""></div>
+        <div ng-include="'views/footer.html'"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script src="external_files/jquery.min.js"></script>
+    <script src="external_files/angular.min.js"></script>
+    <script src="external_files/angular-route.min.js"></script>
+    <script src="external_files/bootstrap.min.js"></script>
+    <script src="external_files/aes.js"></script>
+
+    <link rel="stylesheet" href="external_files/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+
+    <script src="controllers/index.js"></script>
+    <script src="controllers/loginController.js"></script>
+    <script src="controllers/footerController.js"></script>
+    <script src="services/getService.js"></script>
+</head>
+
+<body ng-app="sampleApp">
+    <div class="container app-container app-no-padding" ng-controller="loginController">
+        <nav class="navbar navbar-default app-login-navbar">
+            <div class="app-navbar-left">
+                <div class="app-name">Sales Management</div>
+                <div class="app-company-name"> - By Sai</div>
+            </div>
+            <div class="app-navbar-right" ng-show="showLoginButton">
+                <button class="btn btn-info" ng-click="fnRedirectLogin()">Back to Login</button>
+            </div>
+        </nav>
+        <div class="alert alert-{{alertType}}" role="alert" data-ng-show="showAlert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong><span ng-bind="alertType"></span>!</strong> <span ng-bind="alertMessage"></span>
+        </div>
+        <div ng-view=""></div>
+        <div ng-include="'views/footer.html'"></div>
+    </div>
+</body>
+
+</html>

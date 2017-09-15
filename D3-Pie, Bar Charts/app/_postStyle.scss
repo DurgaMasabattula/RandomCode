@@ -1,0 +1,64 @@
+.app-container {
+    .app-shadow-box{
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+            padding: 1em;
+    margin-bottom: 1em;
+    }
+    .app-navbar-right {
+        .app-header-list {
+            li {
+                display: inline;
+                color: #FFFFFF;
+                font-size: 1.2em;
+            }
+        }
+    }
+    .app-row-class {
+        margin-top: 6em;
+        margin-left: 2em;
+        margin-right: 2em;
+        .app-chart-dashboard{
+            padding-right:2em;
+            padding-left:1em;
+        }
+        .app-table-div {
+            padding-top: 5em;
+            width: 60%;
+            margin-left: 17%;
+        }
+        .app-column-class {
+            margin-bottom: 10em;
+        }
+        .app-table-header {
+            background: rgb(221, 221, 142) !important;
+        }
+        tr:nth-child(odd) {
+            background: rgb(247, 215, 237);
+        }
+        tr:nth-child(even) {
+            background: rgb(255, 212, 176);
+        }
+        .app-chart-title {
+            font-weight: bold;
+            font-size: 1.5em;
+            font-variant: small-caps;
+            margin-bottom: 2em;
+            text-decoration: underline;
+        }
+    }
+    .app-chart-big-title {
+        padding-left: 17em;
+    }
+    .legend rect {
+        fill: #FFFFFF;
+    }
+    .axis {
+        font-size: 12px;
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+}

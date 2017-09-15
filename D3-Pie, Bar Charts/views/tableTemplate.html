@@ -1,0 +1,17 @@
+<div class="table-responsive">
+    <button class="btn btn-danger pull-right" style="margin-bottom:0.5em;" ng-click="fnRemove();"><i class="fa fa-times-circle"></i></button>
+    <table class="table table-bordered table-hover">
+        <tr class="app-table-header">
+            <th>Order Number</th>
+            <th>User Name</th>
+            <th>Value</th>
+            <th>Quantity</th>
+        </tr>
+        <tr ng-repeat="order in salesOrderData">
+            <td>{{order.orderNum}}</td>
+            <td>{{order.userName}}</td>
+            <td>{{order.value}}</td>
+            <td>{{order.qty}}</td>
+        </tr>
+    </table>
+</div>

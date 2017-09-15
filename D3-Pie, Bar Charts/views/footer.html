@@ -1,0 +1,77 @@
+<div ng-controller="footerController">
+    <nav class="navbar navbar-default app-login-navbar-footer">
+        <ul class="list-unstyled app-footer-list">
+            <li ng-click="fnShowModal('privacy')">Privacy Policy</li>
+            <li ng-click="fnShowModal('terms')">Terms Of Use</li>
+            <li ng-click="fnShowSupportModal()">Support</li>
+        </ul>
+    </nav>
+    <div class="modal fade" id="footerStaticModal" role="dialog">
+        <div class="modal-dialog app-footer-modal">
+            <div class="modal-content">
+                <div class="modal-header app-modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><span ng-bind="modalTitle"></span></h4>
+                </div>
+                <div class="modal-body app-modal-body">
+                    <p><span ng-bind="modalContent"></span></p>
+                </div>
+                <div class="modal-footer app-modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="footerSupportModal" role="dialog">
+        <div class="modal-dialog app-footer-modal">
+            <div class="modal-content">
+                <div class="modal-header app-modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Contact Our Support Team</span></h4>
+                </div>
+                <div class="modal-body app-modal-body">
+                    <form name="supportForm">
+                        <table class="app-support-table">
+                            <tr>
+                                <td>
+                                    <label>Subject:</label>
+                                </td>
+                                <td>
+                                    <input type="text" class="app-support-field" ng-required="true"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Your Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" class="app-support-field" ng-required="true"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Your Email:</label>
+                                </td>
+                                <td>
+                                    <input type="text" class="app-support-field" ng-required="true"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Your Query:</label>
+                                </td>
+                                <td>
+                                    <textarea rows="5" class="app-support-field" ng-required="true"/></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="modal-footer app-modal-footer">
+                    <button type="button" class="btn btn-success" ng-click="fnSendSupport()" ng-disabled="supportForm.$invalid">Send</button>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
